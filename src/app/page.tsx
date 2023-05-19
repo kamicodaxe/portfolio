@@ -139,7 +139,7 @@ export default function Home() {
               <div className='relative'>
                 <label htmlFor={"Message"} className=' absolute leading-4 -top-2 bg-white px-2'>{"Message"}</label>
                 <textarea
-                  className='w-full leading-6 px-2 border-2 border-black'
+                  className='w-full leading-6 px-2 pt-2 border-2 border-black'
                   name="message"
                   id="message"
                   rows={6}
