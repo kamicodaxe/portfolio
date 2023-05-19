@@ -19,8 +19,8 @@ export default function Home() {
         <div className='space-y-8 pt-4'>
           <div className='leading-9'>
             <p className='text-gray-500 text-6xl'>Hi,</p>
-            <p className='text-gray-500 text-2xl pb-8'>I'm Loic KAMI</p>
-            <p className=' text-black text-4xl md:text-5xl letter-spaced'>I'm a get-the-job-done <br /> Full Stack(FE-Heavy) developer.</p>
+            <p className='text-gray-500 text-2xl pb-8'>I&apos;m Loic KAMI</p>
+            <p className=' text-black text-4xl md:text-5xl letter-spaced'>I&apos;m a get-the-job-done <br /> Full Stack(FE-Heavy) developer.</p>
             <p className=' max-w-xl leading-6 pt-4'>
               I have my backgrounds in start-up environments. Being playing with code for 6+ years,
               I managed to achived 15x speed boost on react-native-map displaying over 500 clustered markers on world map.
