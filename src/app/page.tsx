@@ -1,8 +1,29 @@
-import Ruler from '@/components/Ruler'
-import TextInput from '@/components/TextInput'
-import Title from '@/components/Title'
+'use client';
+import ContactForm from '@/components/ContactForm';
+import Ruler from '@/components/Ruler';
+import Title from '@/components/Title';
+import { FormEvent, useState } from 'react';
 
 export default function Home() {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [message, setMessage] = useState('')
+
+
+
+  function onSubmit(e: FormEvent) {
+    e.preventDefault()
+    console.log({
+      firstName,
+      lastName,
+      email,
+      phone,
+      message
+    })
+  }
+
   return (
     <main className="flex min-h-screen flex-col container md:max-w-6xl mx-auto px-8 ">
 
@@ -138,7 +159,7 @@ export default function Home() {
           <div className=' flex-1 md:ml-8'>
             <div>
               <h5>Github</h5>
-              <a href='' target='_blank'> https://github.com/kamicodaxe </a>
+              <a href='https://github.com/kamicodaxe' target='_blank'> https://github.com/kamicodaxe </a>
             </div>
             <Ruler height='32px' lgHidden />
             <div>
@@ -149,32 +170,7 @@ export default function Home() {
           </div>
 
           <div className=' flex-1'>
-            <div className='w-full'>
-              <div className='w-full space-y-8 md:space-y-0 md:space-x-4 md:flex'>
-                <TextInput label='First Name' />
-                <TextInput label='Last Name' />
-              </div>
-              <Ruler height='32px' />
-              <div className='w-full space-y-8 md:space-y-0 md:space-x-4 md:flex'>
-                <TextInput label='Email' />
-                <TextInput label='Phone' />
-              </div>
-              <Ruler height='32px' />
-
-              <div className='relative'>
-                <label htmlFor={"Message"} className=' absolute leading-4 -top-2 bg-white px-2'>{"Message"}</label>
-                <textarea
-                  className='w-full leading-6 px-2 pt-2 border-2 border-black'
-                  name="message"
-                  id="message"
-                  rows={6}
-                />
-              </div>
-              <Ruler height='32px' />
-
-              <button className='uppercase border-2 border-black p-4 text-white bg-black'>Send Message</button>
-
-            </div>
+            <ContactForm />
           </div>
 
         </div>
