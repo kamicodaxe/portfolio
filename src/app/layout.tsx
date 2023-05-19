@@ -1,11 +1,7 @@
-import { Lato } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const lato = Lato({
-  style: ['normal'],
-  weight: ['700', '400', '300'],
-  subsets: ['latin']
-})
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Portfolio - Loïc Kami',
@@ -17,10 +13,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  console.log(lato.className)
   return (
     <html lang="en">
-      <body className={lato.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
