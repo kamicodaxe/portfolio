@@ -51,7 +51,7 @@ export default function Home() {
             <p className='text-gray-500 text-6xl'>Hi,</p>
             <p className='text-gray-500 text-2xl'>I&apos;m Loic KAMI</p>
             <Ruler height='32px' />
-            <p className=' text-black text-4xl md:text-5xl letter-spaced'>I&apos;m a  Full Stack(FE-Heavy) <br /> developer.</p>
+            <p className=' text-black text-4xl md:text-5xl letter-spaced'>Full Stack developer.</p>
             <Ruler height='16px' />
             <p className='max-w-xl leading-6 mx-auto'>
               My only real skill is problem solving. Being playing with code for 6+ years,
@@ -223,8 +223,8 @@ export default function Home() {
             </div>
             <Ruler height='32px' lgHidden />
             <div>
-              <h5>Twitter</h5>
-              <a href='' target='_blank'> https://twitter.com/kamicodaxe </a>
+              <h5>Linkedin</h5>
+              <a href='https://www.linkedin.com/in/lo%C3%AFc-kami-78a855265/' target='_blank'> https://www.linkedin.com/in/lo%C3%AFc-kami-78a855265/ </a>
             </div>
             <Ruler height='32px' lgHidden />
           </div>
