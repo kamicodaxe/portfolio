@@ -6,7 +6,7 @@ type Props = {
 
 const Title: React.FC<Props> = ({ value }) => {
     return (
-        <h2 className="text-4xl">{value}</h2>
+        <h2 className="text-4xl font-bold">{value}</h2>
     )
 }
 
