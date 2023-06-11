@@ -4,34 +4,69 @@ import { FormEvent, useState } from "react";
 import Ruler from "./Ruler";
 import TextInput from "./TextInput";
 
+type ResponseData = {
+    sent: boolean
+    errorMessage: string
+}
+
 const ContactForm = () => {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
+    const [messageSent, setMessageSent] = useState(false)
+    const [errorMessage, setErrorMessage] = useState('')
 
     function onSubmit(e: FormEvent) {
         e.preventDefault()
-        console.log({
-            firstName,
-            lastName,
-            email,
-            phone,
-            message
+
+        // Make the POST request
+        fetch("/api/forms", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                firstName,
+                lastName,
+                email,
+                phone,
+                message,
+                // Change the email to receive in another email account
+                _email: 'lkami@bogital.com',
+                _subject: 'Portfolio Website Message'
+            }),
         })
+            .then<ResponseData>((response) => response.json())
+            .then((data) => {
+                console.log("Response from server:", data);
+                // Handle the response from the server
+                setMessageSent(data.sent)
+                setErrorMessage(data.errorMessage)
+            })
+            .catch((error) => {
+                setErrorMessage('There was an issue submiting your message, please retry later.')
+
+            });
+
     }
 
     return (
-        <form onSubmit={onSubmit} className='w-full'>
+        <form
+            className='w-full'
+            onSubmit={onSubmit}
+            method="POST"
+        >
+            
             <div className='w-full space-y-8 md:space-y-0 md:space-x-4 md:flex'>
-                <TextInput onTextChange={setFirstName} label='First Name' />
-                <TextInput onTextChange={setLastName} label='Last Name' />
+                <TextInput name="firstName" onTextChange={setFirstName} label='First Name' />
+                <TextInput name="lastName" onTextChange={setLastName} label='Last Name' />
             </div>
             <Ruler height='32px' />
             <div className='w-full space-y-8 md:space-y-0 md:space-x-4 md:flex'>
-                <TextInput onTextChange={setEmail} label='Email' />
-                <TextInput onTextChange={setPhone} label='Phone' />
+                <TextInput name="email" onTextChange={setEmail} label='Email' />
+                <TextInput name="phone" onTextChange={setPhone} label='Phone' />
             </div>
             <Ruler height='32px' />
 
@@ -48,6 +83,22 @@ const ContactForm = () => {
             <Ruler height='32px' />
 
             <button type='submit' className='uppercase border-2 border-black p-4 text-white bg-black'>Send Message</button>
+            
+
+            <div className='w-full'>
+                <Ruler height='32px' />
+                {
+                    messageSent && (
+                        <p className='bg-green-500 text-white text-center py-4'>Thanks, I will reply in less than 24 hours.</p>
+                    )
+                }
+
+                {
+                    errorMessage && (
+                        <p className='bg-red-500 transition-colors text-white text-center py-4'>{errorMessage}</p>
+                    )
+                }
+            </div>
 
         </form>
     )
