@@ -1,5 +1,6 @@
 'use client';
 import ContactForm from '@/components/ContactForm';
+import ProjectPreview from '@/components/ProjectPreview';
 import Ruler from '@/components/Ruler';
 import Title from '@/components/Title';
 import { FormEvent, useState } from 'react';
@@ -147,9 +148,8 @@ export default function Home() {
 
           </div>
 
-          <div className='w-full h-48 md:h-96 md:w-2/3 bg-gray-200 bg-[url("/images/gesmax.jpeg")] bg-cover transition-all delay-300 duration-1000 ease-in-out hover:bg-bottom' >
+          <ProjectPreview src='/images/gesmax.jpeg' alt='Gesmax landing page screenshot' />
 
-          </div>
         </div>
         <Ruler height='32px' />
 
@@ -199,9 +199,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='w-full h-48 md:h-96 md:w-2/3 bg-gray-200 bg-[url("/images/bogital.jpeg")] bg-cover transition-all delay-300 duration-1000 ease-in-out hover:bg-bottom' >
+          <ProjectPreview src='/images/bogital.jpeg' alt='Bogital site screenshot' />
 
-          </div>
         </div>
         <Ruler height='32px' />
 
