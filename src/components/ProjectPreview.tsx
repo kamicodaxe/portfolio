@@ -11,31 +11,11 @@ const ProjectPreview: React.FC<Props> = ({ src, alt }) => {
 
     const [mousePositionY, setMousePositionY] = useState(0);
     const [isMouseOut, setIsMouseOut] = useState(true);
-
-    const imageElement = useRef<HTMLDataElement>(null)
-
-    function animateImage(mouseY: number) {
-        let mouseYPosition = mousePositionY
-        while (mouseYPosition < mouseY) {
-            const timeout = setTimeout(() => {
-                setMousePositionY(prevMouseY => prevMouseY + 1)
-                mousePositionY > mouseY ? animateImage(mouseY) : 0
-                animateImage(mouseY)
-                clearTimeout(timeout)
-            })
-        }
-
-        requestAnimationFrame(() => animateImage(mouseY));
-    }
+    const imageElementRef = useRef<HTMLImageElement>(null)
 
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
         const { top, height } = (event.target as HTMLDivElement).getBoundingClientRect();
         const y = ((event.clientY - top) / height) * 100;
-        if (isMouseOut) {
-            animateImage(y)
-            setIsMouseOut(false)
-            return
-        }
         setMousePositionY(y);
     };
 
@@ -46,6 +26,7 @@ const ProjectPreview: React.FC<Props> = ({ src, alt }) => {
         >
             <Image
                 className='object-cover'
+                ref={imageElementRef}
                 src={src}
                 alt={alt}
                 fill
