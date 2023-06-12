@@ -22,7 +22,7 @@ const ContactForm = () => {
         e.preventDefault()
 
         // Make the POST request
-        fetch("/api/forms", {
+        fetch("/api/form", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
