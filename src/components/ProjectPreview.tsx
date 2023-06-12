@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 type Props = {
     src: string;
@@ -11,7 +11,6 @@ const ProjectPreview: React.FC<Props> = ({ src, alt }) => {
 
     const [mousePositionY, setMousePositionY] = useState(0);
     const [isMouseOut, setIsMouseOut] = useState(true);
-    const imageElementRef = useRef<HTMLImageElement>(null)
 
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
         const { top, height } = (event.target as HTMLDivElement).getBoundingClientRect();
@@ -19,14 +18,17 @@ const ProjectPreview: React.FC<Props> = ({ src, alt }) => {
         setMousePositionY(y);
     };
 
+
     return (
         <div className='w-full h-48 md:h-96 md:w-2/3 bg-gray-200 relative overflow-hidden cursor-ns-resize'
             onMouseMove={handleMouseMove}
-            onMouseLeave={() => setIsMouseOut(true)}
+            onMouseLeave={() => {
+                setIsMouseOut(true)
+                setMousePositionY(0)
+            }}
         >
             <Image
                 className='object-cover'
-                ref={imageElementRef}
                 src={src}
                 alt={alt}
                 fill
