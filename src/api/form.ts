@@ -50,19 +50,20 @@ export default async function handler(
         `,
         });
 
-        return res.json({
+        console.log(info)
+
+        res.json({
             sent: true,
             errorMessage: ''
         })
 
     } catch (e) {
-        return res.json({
+        console.warn(e)
+        res.json({
             sent: false,
-            errorMessage: 'There was an issue submiting your message, please retry later.'
+            errorMessage: 'There was an issue submiting your message, please retry later...'
         })
     }
-
-
 
 
 }
