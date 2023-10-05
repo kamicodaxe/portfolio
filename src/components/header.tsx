@@ -31,12 +31,12 @@ const Header: React.FC<HeaderProps> = ({ }) => {
 					<p className='text-gray-500 text-6xl'>Hi,</p>
 					<p className='text-gray-500 text-2xl'>I&apos;m Loic KAMI</p>
 					<Ruler height='32px' />
-					<p className=' text-black text-4xl md:text-5xl letter-spaced'>Full Stack developer.</p>
+					<p className=' text-black text-4xl md:text-5xl letter-spaced'>Full-Stack Software Engineer.</p>
 					<Ruler height='16px' />
 					<p className='max-w-xl leading-6 mx-auto'>
-						My only real skill is problem solving. Being playing with code for 6+ years,
-						I managed to achived 15x speed boost on react-native-map displaying over 500 clustered markers on world map.
-						Always from scratch, never used a template!
+						Seasoned Software Engineer adept in React (Next.js, React Native), Node.js, Golang, and C.
+						My forte lies in problem-solving, crafting innovative solutions from scratch.
+						No templates used; each project showcases my dedication, creativity and expertise.
 					</p>
 				</div>
 				<Ruler height='32px' />
