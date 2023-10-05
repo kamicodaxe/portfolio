@@ -59,6 +59,14 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
 							}
 						</div>
 					</div>
+					{
+						project.info && (
+							<>
+								<Ruler height='16px' />
+								<p className="font-semibold"> {project.info} </p>
+							</>
+						)
+					}
 
 				</div>
 

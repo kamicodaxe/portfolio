@@ -30,7 +30,8 @@ const db = {
 					"src": "/images/kb-3.PNG",
 					"alt": "KBOOM.gg Clone light mode Screenshot"
 				}
-			]
+			],
+			"info": ""
 		},
 		{
 			"name": "Gesmax Point-of-sale platform",
@@ -38,17 +39,14 @@ const db = {
 			"tools": ["React Native", "Jira", "Golang", "Next JS", "Node JS", "Firebase", "Tailwind CSS"],
 			"links": [
 				{
-					"title": "GitHub",
-					"url": "https://github.com/kamicodaxe/gesmax.web"
+					"title": "Webapp Demo",
+					"url": "http://gesmaxapp.vercel.app/"
 				},
 				{
 					"title": "Landing Page",
 					"url": "http://gesmax.vercel.app/"
-				},
-				{
-					"title": "Web Demo",
-					"url": "http://gesmaxapp.vercel.app/"
 				}
+
 			],
 			"media": [
 				{
@@ -61,7 +59,8 @@ const db = {
 					"src": "/images/ges-2.PNG",
 					"alt": "Gesmax landing page screenshot"
 				}
-			]
+			],
+			"info": "Demo credentials: nailsnbody@bogital.com | passlynette2022"
 		},
 		{
 			"name": "Bogital Web Agency",
@@ -133,7 +132,7 @@ const db = {
 			"links": [
 				{
 					"title": "Website",
-					"url": "Ismatech Business School"
+					"url": "http://ismatech.vercel.app/"
 				}
 			],
 			"media": [
