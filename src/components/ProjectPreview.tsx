@@ -25,7 +25,7 @@ const ProjectPreview: React.FC<Props> = ({ media, activeDotColor = "black", inac
     };
 
     return (
-        <div className="w-full h-48 md:h-96 md:w-2/3 shadow-lg bg-gray-200 relative overflow-hidden cursor-pointer">
+        <div className="w-full h-64 md:h-96 md:w-2/3 shadow-lg bg-gray-200 relative overflow-hidden cursor-pointer">
             {media.map((item, index) => (
                 <div
                     key={index}
