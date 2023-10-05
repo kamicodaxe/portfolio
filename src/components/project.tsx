@@ -62,7 +62,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
 
 				</div>
 
-				<ProjectPreview src={project.media.src} alt={project.media.alt} />
+				<ProjectPreview media={project.media} />
 
 			</div>
 
