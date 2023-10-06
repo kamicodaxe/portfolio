@@ -81,47 +81,24 @@ const db = {
 			"info": "Demo credentials: nailsnbody@bogital.com | passlynette2022"
 		},
 		{
-			"name": "Bogital Web Agency",
-			"description": "Bogital is a software development agency founded in 2017.",
-			"tools": ["Next JS", "Wordpress API", "Figma", "GraphQL", "Tailwind CSS", "i18n"],
-			"links": [
-				{
-					"title": "GitHub",
-					"url": "https://github.com/kamicodaxe/bogital.com"
-				},
-				{
-					"title": "Landing Page",
-					"url": "http://bogital.com/"
-				}
-			],
-			"media": [
-				{
-					"type": "image",
-					"src": "/images/bogital.jpeg",
-					"alt": "Bogital site screenshot"
-				}
-			]
-		},
-		{
-			"name": "FENASSCO 2022 Ligue A Website",
-			"description": "A sports website developed using Next.js and Tailwind CSS within a strict one-week deadline. It showcased your ability to thrive under pressure.",
-			"tools": ["Next.js", "Tailwind CSS"],
+			"name": "Civil Engineering Club Website",
+			"description": "The Civil Engineering Club website, led by me as the Chief of the IT commission in 2020-2021, is a dynamic hub showcasing the club's vibrant activities, innovative projects, and valuable resources. It offers insights into civil engineering, fostering a vibrant learning community.",
+			"tools": ["Hugo", "Gulp", "Netlify CMS", "JAMstack", "HTML", "CSS", "JavaScript"],
 			"links": [
 				{
 					"title": "Website",
-					"url": "https://fenassco.vercel.app/"
+					"url": "https://clubgcenstp.netlify.app/"
+				},
+				{
+					"title": "GitHub Repository",
+					"url": "https://github.com/kamicodaxe/clubgcenstp"
 				}
 			],
 			"media": [
 				{
 					"type": "image",
-					"src": "/images/fen-1.PNG",
-					"alt": "FENASSCO 2022 Ligue A Website screenshot"
-				},
-				{
-					"type": "image",
-					"src": "/images/fen-2.PNG",
-					"alt": "FENASSCO 2022 Ligue A Website screenshot"
+					"src": "/images/cgc.jpeg",
+					"alt": "Ismatech Business School website screenshot"
 				}
 			]
 		},
@@ -165,7 +142,54 @@ const db = {
 					"alt": "Ismatech Business School website screenshot"
 				}
 			]
-		}
+		},
+		{
+			"name": "FENASSCO 2022 Ligue A Website",
+			"description": "A sports website developed using Next.js and Tailwind CSS within a strict one-week deadline. It showcased your ability to thrive under pressure.",
+			"tools": ["Next.js", "Tailwind CSS"],
+			"links": [
+				{
+					"title": "Website",
+					"url": "https://fenassco.vercel.app/"
+				}
+			],
+			"media": [
+				{
+					"type": "image",
+					"src": "/images/fen-1.PNG",
+					"alt": "FENASSCO 2022 Ligue A Website screenshot"
+				},
+				{
+					"type": "image",
+					"src": "/images/fen-2.PNG",
+					"alt": "FENASSCO 2022 Ligue A Website screenshot"
+				}
+			]
+		},
+		{
+			"name": "Bogital Web Agency",
+			"description": "Bogital is a software development agency founded in 2017.",
+			"tools": ["Next JS", "Wordpress API", "Figma", "GraphQL", "Tailwind CSS", "i18n"],
+			"links": [
+				{
+					"title": "GitHub",
+					"url": "https://github.com/kamicodaxe/bogital.com"
+				},
+				{
+					"title": "Landing Page",
+					"url": "http://bogital.com/"
+				}
+			],
+			"media": [
+				{
+					"type": "image",
+					"src": "/images/bogital.jpeg",
+					"alt": "Bogital site screenshot"
+				}
+			]
+		},
+
+
 
 	]
 };
