@@ -15,7 +15,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
 	return (
 		<>
 			<div className='w-full md:flex'>
-				<div className=' md:w-1/3 '>
+				<div className=' md:w-1/3 md:mr-2'>
 					<div>
 						<h3 className="font-bold text-xl">{project.name}</h3>
 						<Ruler height='8px' />
