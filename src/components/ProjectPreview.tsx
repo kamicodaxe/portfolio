@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 type MediaItem = {
     type: string; // "image" | "video"
@@ -25,7 +25,7 @@ const ProjectPreview: React.FC<Props> = ({ media, activeDotColor = "black", inac
     };
 
     return (
-        <div className="w-full h-64 md:h-96 md:w-2/3 shadow-lg bg-gray-200 relative overflow-hidden cursor-pointer">
+        <div className="w-full h-64 md:h-96 md:w-2/3 shadow-lg bg-gray-200 relative overflow-hidden">
             {media.map((item, index) => (
                 <div
                     key={index}
@@ -39,16 +39,20 @@ const ProjectPreview: React.FC<Props> = ({ media, activeDotColor = "black", inac
                     )}
                 </div>
             ))}
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-                {media.map((_, index) => (
-                    <div
-                        onClick={() => setCurrentIndex(index)}
-                        key={index}
-                        className={`w-4 h-4 rounded-full mx-1 ${index === currentIndex ? `bg-${activeDotColor}` : `bg-${inactiveDotColor}`
-                            }`}
-                    />
-                ))}
-            </div>
+            {
+                media.length != 1 && (
+                    <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+                        {media.map((_, index) => (
+                            <div
+                                onClick={() => setCurrentIndex(index)}
+                                key={index}
+                                className={`w-4 h-4 rounded-full mx-1 ${index === currentIndex ? `bg-${activeDotColor}` : `bg-${inactiveDotColor}`
+                                    }`}
+                            />
+                        ))}
+                    </div>
+                )
+            }
             {/* {media.length > 1 && (
                 <>
                     <button className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-500 p-2 rounded-full text-white" onClick={prevSlide}>
