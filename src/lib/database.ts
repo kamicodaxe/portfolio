@@ -34,6 +34,24 @@ const db = {
 			"info": ""
 		},
 		{
+			"name": "React Pannellum Next - Interactive 360 Panorama Library",
+			"description": "React Pannellum Next is an advanced npm package that seamlessly integrates interactive 360-degree panoramas into Next.js applications. It offers features such as 360-degree panoramas rendering, interactive hotspots, customization options, responsive design and event handling.",
+			"tools": ["React", "Next.js", "Pannellum JS", "JavaScript"],
+			"links": [
+				{
+					"title": "NPM Package",
+					"url": "https://www.npmjs.com/package/react-pannellum-next"
+				}
+			],
+			"media": [
+				{
+					"type": "video",
+					"src": "images/react-pannellum-next.mp4",
+					"alt": ""
+				},
+			]
+		},
+		{
 			"name": "Gesmax Point-of-sale platform",
 			"description": "Gesmax is a full-fledged POS system built with React-Native, available on web, desktop, and mobile. One click e-commerce solution.",
 			"tools": ["React Native", "Jira", "Golang", "Next JS", "Node JS", "Firebase", "Tailwind CSS"],
@@ -91,7 +109,7 @@ const db = {
 			"links": [
 				{
 					"title": "Website",
-					"url": "FENASSCO 2022 Ligue A Website"
+					"url": "https://fenassco.vercel.app/"
 				}
 			],
 			"media": [
