@@ -3,7 +3,7 @@ const db = {
 		{
 			"name": "React Pannellum Next - Interactive 360 Panorama Library",
 			"description": "React Pannellum Next is an advanced npm package that seamlessly integrates interactive 360-degree panoramas into Next.js applications. It offers features such as 360-degree panoramas rendering, interactive hotspots, customization options, responsive design and event handling.",
-			"tools": ["React", "Next.js", "Pannellum JS", "JavaScript"],
+			"tools": ["React", "Typescript", "Next.js", "Pannellum JS", "JavaScript"],
 			"links": [
 				{
 					"title": "NPM Package",
@@ -21,7 +21,7 @@ const db = {
 		{
 			"name": "Gesmax Point-of-sale platform",
 			"description": "Gesmax is a full-fledged POS system built with React-Native, available on web, desktop, and mobile. One click e-commerce solution.",
-			"tools": ["React Native", "Jira", "Golang", "Next JS", "Node JS", "Firebase", "Tailwind CSS"],
+			"tools": ["React Native", "Typescript", "Jira", "Golang", "Next JS", "Node JS", "Firebase", "Tailwind CSS"],
 			"links": [
 				{
 					"title": "Webapp Demo",
@@ -36,14 +36,15 @@ const db = {
 			"media": [
 				{
 					"type": "image",
-					"src": "/images/ges-1.PNG",
-					"alt": "Gesmax webapp screenshot"
+					"src": "/images/ges-2.PNG",
+					"alt": "Gesmax landing page screenshot"
 				},
 				{
 					"type": "image",
-					"src": "/images/ges-2.PNG",
-					"alt": "Gesmax landing page screenshot"
+					"src": "/images/ges-1.PNG",
+					"alt": "Gesmax webapp screenshot"
 				}
+
 			],
 			"info": "Demo credentials: nailsnbody@bogital.com | passlynette2022"
 		},
@@ -72,7 +73,7 @@ const db = {
 		{
 			"name": "Environmental Secrets Manager (envzy-cli)",
 			"description": "A project developed in Golang, specifically a CLI tool named envzy-cli, focused on managing environmental secrets.",
-			"tools": ["Golang"],
+			"tools": ["Golang", "Cobra"],
 			"links": [
 				{
 					"title": "GitHub",
@@ -90,7 +91,7 @@ const db = {
 		{
 			"name": "KBOOM.gg Clone Project",
 			"description": "Explore the world of esports with this comprehensive KBOOM.gg clone developed using Next.js. This project showcases my expertise in building interactive and visually appealing web applications inspired by the gaming industry.",
-			"tools": ["Next.js", "React", "Tailwind CSS", "Node.js"],
+			"tools": ["Next.js", "Typescript", "React", "Tailwind CSS", "Node.js"],
 			"links": [
 				{
 					"title": "GitHub Repository",
@@ -123,7 +124,7 @@ const db = {
 		{
 			"name": "Ismatech Business School demo prototype",
 			"description": "ISMATECH Business School offers tailored education and consulting services to businesses and professionals, empowering them to excel in the ever-evolving corporate landscape.",
-			"tools": ["Next.js", "Tailwind CSS"],
+			"tools": ["Next.js", "Typescript", "Tailwind CSS"],
 			"links": [
 				{
 					"title": "Website",
@@ -146,7 +147,7 @@ const db = {
 		{
 			"name": "FENASSCO 2022 Ligue A Website",
 			"description": "A sports website developed using Next.js and Tailwind CSS within a strict one-week deadline. It showcased your ability to thrive under pressure.",
-			"tools": ["Next.js", "Tailwind CSS"],
+			"tools": ["Next.js", "Typescript", "Dato Headless CMS", "Tailwind CSS"],
 			"links": [
 				{
 					"title": "Website",
@@ -169,7 +170,7 @@ const db = {
 		{
 			"name": "Bogital Web Agency",
 			"description": "Bogital is a software development agency founded in 2017.",
-			"tools": ["Next JS", "Wordpress API", "Figma", "GraphQL", "Tailwind CSS", "i18n"],
+			"tools": ["Next JS", "Typescript", "Wordpress API", "Figma", "GraphQL", "Tailwind CSS", "i18n"],
 			"links": [
 				{
 					"title": "GitHub",

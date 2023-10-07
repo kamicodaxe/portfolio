@@ -16,13 +16,26 @@ const Tools: React.FC<ToolsProps> = ({ }) => {
 			<div className="flex space-x-8 flex-wrap">
 				<p>React JS</p>
 				<p>React Native</p>
-				<p>Node JS</p>
-				<p>Golang</p>
-				<p>Firebase</p>
+				<p>Typescript</p>
 				<p>Tailwind CSS</p>
 				<p>Figma</p>
+				<p>Node JS</p>
+				<p>Firebase</p>
+				<p>C/C++</p>
+				<p>Golang</p>
 				<p>Wordpress</p>
+			</div>
+			<Ruler height='16px' />
+			<div className="flex space-x-8 flex-wrap">
+				<p>MySQL</p>
+				<p>MongoDB</p>
+				<p>PostgresSQL</p>
 				<p>Jira</p>
+				<p>AWS</p>
+				<p>Git</p>
+				<p>CI/CD</p>
+				<p>Redux Toolkit</p>
+				<p>Scrum Master</p>
 			</div>
 		</section>
 	)

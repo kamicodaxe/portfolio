@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ }) => {
 					<p className=' text-black text-4xl md:text-5xl letter-spaced'>Full-Stack Software Engineer.</p>
 					<Ruler height='16px' />
 					<p className='max-w-xl leading-6 mx-auto'>
-						Seasoned Software Engineer adept in React (Next.js, React Native), Node.js, Golang, and C.
+						Seasoned Software Engineer adept in React (Next.js, React Native), Typescript, Node.js, Golang, and C/C++.
 						My forte lies in problem-solving, crafting innovative solutions from scratch.
 						No templates used; each project showcases my dedication, creativity and expertise.
 					</p>
