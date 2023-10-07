@@ -1,39 +1,6 @@
 const db = {
 	"projects": [
 		{
-			"name": "KBOOM.gg Clone Project",
-			"description": "Explore the world of esports with this comprehensive KBOOM.gg clone developed using Next.js. This project showcases my expertise in building interactive and visually appealing web applications inspired by the gaming industry.",
-			"tools": ["Next.js", "React", "Tailwind CSS", "Node.js"],
-			"links": [
-				{
-					"title": "GitHub Repository",
-					"url": "https://github.com/kamicodaxe/kboom.gg"
-				},
-				{
-					"title": "Live Demo",
-					"url": "https://nextjs-kboom.vercel.app/"
-				}
-			],
-			"media": [
-				{
-					"type": "image",
-					"src": "/images/kb-1.PNG",
-					"alt": "KBOOM.gg Clone Screenshot"
-				},
-				{
-					"type": "image",
-					"src": "/images/kb-2.PNG",
-					"alt": "KBOOM.gg Clone Blog Screenshot"
-				},
-				{
-					"type": "image",
-					"src": "/images/kb-3.PNG",
-					"alt": "KBOOM.gg Clone light mode Screenshot"
-				}
-			],
-			"info": ""
-		},
-		{
 			"name": "React Pannellum Next - Interactive 360 Panorama Library",
 			"description": "React Pannellum Next is an advanced npm package that seamlessly integrates interactive 360-degree panoramas into Next.js applications. It offers features such as 360-degree panoramas rendering, interactive hotspots, customization options, responsive design and event handling.",
 			"tools": ["React", "Next.js", "Pannellum JS", "JavaScript"],
@@ -119,6 +86,39 @@ const db = {
 					"alt": "envzy-cli video"
 				}
 			]
+		},
+		{
+			"name": "KBOOM.gg Clone Project",
+			"description": "Explore the world of esports with this comprehensive KBOOM.gg clone developed using Next.js. This project showcases my expertise in building interactive and visually appealing web applications inspired by the gaming industry.",
+			"tools": ["Next.js", "React", "Tailwind CSS", "Node.js"],
+			"links": [
+				{
+					"title": "GitHub Repository",
+					"url": "https://github.com/kamicodaxe/kboom.gg"
+				},
+				{
+					"title": "Live Demo",
+					"url": "https://nextjs-kboom.vercel.app/"
+				}
+			],
+			"media": [
+				{
+					"type": "image",
+					"src": "/images/kb-1.PNG",
+					"alt": "KBOOM.gg Clone Screenshot"
+				},
+				{
+					"type": "image",
+					"src": "/images/kb-2.PNG",
+					"alt": "KBOOM.gg Clone Blog Screenshot"
+				},
+				{
+					"type": "image",
+					"src": "/images/kb-3.PNG",
+					"alt": "KBOOM.gg Clone light mode Screenshot"
+				}
+			],
+			"info": ""
 		},
 		{
 			"name": "Ismatech Business School demo prototype",
