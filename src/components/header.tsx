@@ -31,12 +31,14 @@ const Header: React.FC<HeaderProps> = ({ }) => {
 					<p className='text-gray-500 text-6xl'>Hi,</p>
 					<p className='text-gray-500 text-2xl'>I&apos;m Loic KAMI</p>
 					<Ruler height='32px' />
-					<p className=' text-black text-4xl md:text-5xl letter-spaced'>Full-Stack Software Engineer.</p>
+					<p className=' text-black text-4xl md:text-5xl letter-spaced'>Full-Stack React Engineer.</p>
 					<Ruler height='16px' />
 					<p className='max-w-xl leading-6 mx-auto'>
-						Seasoned Software Engineer adept in React (Next.js, React Native), Typescript, Node.js, Golang, and C/C++.
-						My forte lies in problem-solving, crafting innovative solutions from scratch.
-						No templates used; each project showcases my dedication, creativity and expertise.
+						As a passionate Full Stack React Engineer, I offer extensive expertise in Next.js, React Native,
+						Node.js, Golang, and Firebase projects. My adept problem-solving, collaborative approach, and
+						excellent communication empower me to thrive in varied environments. With a successful history of
+						delivering top-notch solutions, from intricate point-of-sale systems to streamlined command-line
+						tools, I am dedicated to excellence in every project I undertake.
 					</p>
 				</div>
 				<Ruler height='32px' />
